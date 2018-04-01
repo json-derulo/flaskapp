@@ -5,7 +5,7 @@ from flask_jwt import JWT, jwt_required
 from security import authenticate, identity
 
 app = Flask(__name__)
-app.secert_key = 'Thomas'
+#app.secert_key = 'XXXXXX'
 api = Api(app)
 
 jwt = JWT(app, authenticate, identity) # new endpoint /auth
